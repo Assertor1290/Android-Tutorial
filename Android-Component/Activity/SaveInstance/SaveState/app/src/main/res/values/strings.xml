@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Save State</string>
+    <string name="Name">Name</string>
+    <string name="PhoneNo">PhoneNo</string>
+</resources>
