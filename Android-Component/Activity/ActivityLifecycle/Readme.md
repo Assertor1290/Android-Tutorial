@@ -2,7 +2,7 @@
 
 Activities in the Android are managed as an Activity stack. When an activity is started, it is placed at the top of the stack and becomes the running activity. The previous activity always remains below in the stack, and will not come to the foreground again until the new activity exists. I would suggest download the associated code to clearly see when which method is called.  
 
-In the activity life cycle there are following methods:
+In the activity life cycle there are following methods:  
 ![Lifecycle](https://user-images.githubusercontent.com/30290570/78508364-f14dbe00-77a3-11ea-8bca-001cf1cf23df.png)
 
 **onCreate():**  
