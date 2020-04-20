@@ -36,6 +36,10 @@ In your implementation, you must override some callback methods.
   * The system invokes this method by calling ***startService()*** when another component (such as an activity) requests that the service be started.  
   * When this method executes, the service is started and can run in the background indefinitely.   
   * If you implement this, it is your responsibility to stop the service when its work is complete by calling ***stopSelf()*** or ***stopService().***   
+  * There are three possible return values for this method:  
+    * **START_STICKY**- Tells the system to create a fresh copy of the service, when sufficient memory is available, after it recovers from low memory. Here you will lose the results that might have computed before.
+    * **START_NOT_STICKY**- tells the system not to bother to restart the service, even when it has sufficient memory.
+    * **START_REDELIVER_INTENT**- tells the system to restart the service after the crash and also redeliver the intents that were present at the time of crash.
 * ***onBind()***  
   * The system invokes this method by calling ***bindService()*** when another component wants to bind with the service.
   * In your implementation of this method, you must provide an interface that clients use to communicate with the service by ***returning an IBinder***. 
