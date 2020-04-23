@@ -6,12 +6,12 @@ These are the different types of services:
 
 * **Started Service**  
   * **Foreground**  
-    * A foreground service performs some operation that is ***noticeable to the user***. For example, an audio app would use a foreground service to play an audio track.   
+    * A foreground service performs some operation that is ***noticeable to the user***. For example, playing music or downloading file.   
     * Foreground services must ***display a Notification***.   
     * Foreground services continue running even when the user isn't interacting with the app.  
 
   * **Background**  
-    * A background service performs an operation that ***isn't directly noticed*** by the user. For example, if an app used a service to compact its storage, that would usually be a background service.  
+    * A background service performs an operation that ***isn't directly noticed*** by the user. For example, if an app used a service to compact its storage, syncing with server that would usually be a background service.  
     * Backgrouns services are subject to background execution limits from Android 8.0. Use ***JobScheduler*** instead of this.     
 
 * **Bound**  
