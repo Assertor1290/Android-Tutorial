@@ -27,5 +27,5 @@ and passing an Intent that specifies the service and includes any data for the s
 <img width="280px" height="560px" src="https://user-images.githubusercontent.com/30290570/79808172-a5e20500-838a-11ea-9750-68a733b7401b.jpg">    <img width="280px" height="560px" src="https://user-images.githubusercontent.com/30290570/79808210-c3af6a00-838a-11ea-8985-9509f1f48792.jpg"  >    <img width="280px" height="560px" src="https://user-images.githubusercontent.com/30290570/79808236-d6c23a00-838a-11ea-860c-961c2136ac17.jpg">  
 
 **TIP**  
-* Use ***ContextCompat.startForegroundService(context,intent)*** to start your foreground service. It automatically checks API version.  
+* Use ***ContextCompat.startForegroundService(context,intent)*** to start your foreground service. It automatically checks whether API version is less than 26 or greater than or equal to 26.  
 * You can see Running services in your mobile in Developer Options.
