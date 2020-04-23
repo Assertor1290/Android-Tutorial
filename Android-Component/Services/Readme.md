@@ -63,3 +63,4 @@ To declare your service, add a <service> element as a child of the <application>
 
 ***Caution:*** To ensure that your app is secure, always use an explicit intent when starting a Service.  
 
+You can watch Coding in Flow tutorial for better understanding :)
