@@ -5,6 +5,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
@@ -14,9 +15,12 @@ import static com.example.codeforeground.App.CHANNEL_ID;
 
 public class ExampleService extends Service {
 
+    private static final String TAG = "tag";
+
     //called first time we create service
     @Override
     public void onCreate() {
+        Log.d(TAG,"Inside onCreate()");
         super.onCreate();
     }
 
@@ -26,6 +30,7 @@ public class ExampleService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         String input = intent.getStringExtra("inputExtra");
+        Log.d(TAG,"Inside onStart()");
 
         //it is better to write it in onCreate method, but here we write in onStart
         //because we regularly update it from edit text
@@ -50,6 +55,7 @@ public class ExampleService extends Service {
 
     @Override
     public void onDestroy() {
+        Log.d(TAG,"Inside onDestroy()");
         super.onDestroy();
     }
 
