@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     public void scheduleJob(View view) {
         ComponentName componentName=new ComponentName(this,ExampleJobService.class);
         JobInfo jobInfo=new JobInfo.Builder(12,componentName)
-                .setRequiresCharging(true)
+                //.setRequiresCharging(true)
                 //requires wifi
                 .setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
                 //Requires permission RECEIVE_BOOT_COMPLETED
