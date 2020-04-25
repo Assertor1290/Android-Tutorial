@@ -6,7 +6,7 @@ These are the different types of services:
 
 * **Started Service**  
   * **Foreground**  
-    * A foreground service performs some operation that is ***noticeable to the user***. For example, playing music or downloading file.   
+    * A foreground service performs some operation that is ***noticeable to the user***. For example, playing music or downloading a file.   
     * Foreground services must ***display a Notification***.   
     * Foreground services continue running even when the user isn't interacting with the app.  
 
