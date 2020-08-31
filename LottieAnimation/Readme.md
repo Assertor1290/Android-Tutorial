@@ -1,6 +1,6 @@
 ## Lottie Animation  
   
-Adding animations to your android app makes it more fun and interesting as compared to static text or pictures. The easiest way to do that is using a 3rd party library Lottie by airbnb. I will demonstrate it here by building a simple splash screen.  
+Adding animations to your android app makes it more fun and interesting as compared to static text or pictures. The easiest way to do that is using a 3rd party library <a href="https://github.com/airbnb/lottie-android">Lottie</a> by airbnb. I will demonstrate it here by building a simple splash screen.  
 
 **Step 1**: Add dependency in build.gradle file.  
 <img src="https://user-images.githubusercontent.com/30290570/91752917-b03bc780-ebe4-11ea-9c14-54494bb1313f.png">  
